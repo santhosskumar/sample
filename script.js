@@ -120,13 +120,13 @@ function checkAnswer() {
     let selectedAnswer = getSelected();
     if (selectedAnswer) {
         if (selectedAnswer === quizData[currentQuiz].correct) {
-            document.getElementById("feedback").innerHTML = "Correct!";
-            document.getElementById("feedback").style.color = "green";
+            document.getElementById("feedback").innerHTML = "This is the Correct answer!";
+            document.getElementById("feedback").style.color = "#00ff00";
         }
 
         else {
-            document.getElementById("feedback").innerHTML = "Wrong!";
-            document.getElementById("feedback").style.color = "red";
+            document.getElementById("feedback").innerHTML = "This is the Wrong answer!";
+            document.getElementById("feedback").style.color = "#ff0000";
         }
     }
 }
